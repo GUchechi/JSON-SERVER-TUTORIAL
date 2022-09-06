@@ -1,4 +1,5 @@
 // javascript for index.html
+const container = document.querySelector(".blogs")
 
 const renderPosts = async () => {
     let url =  'http://localhost:3000/posts'
@@ -13,9 +14,12 @@ const renderPosts = async () => {
                 <h2>${post.title}</h2>
                 <p><small>${post.likes}</small></p>
                 <p>${post.body.slice(0, 100)}</p>
-                <a href="/detail.html">Read more...</a>
+                <a href="/details.html">Read more...</a>
             </div>
         `
+        // inject the template
+
+        container.innerHTML = template;
     })
     
 }
