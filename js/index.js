@@ -12,7 +12,7 @@ const renderPosts = async () => {
         template += `
             <div class="post">
                 <h2>${post.title}</h2>
-                <p><small>${post.likes}</small></p>
+                <p><small>${post.likes} likes</small></p>
                 <p>${post.body.slice(0, 100)}</p>
                 <a href="/details.html">Read more...</a>
             </div>
